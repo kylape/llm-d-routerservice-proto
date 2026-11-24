@@ -1,0 +1,11 @@
+# Demo: one LLMRouterService + one LLMRouterServiceProfile in a
+# namespace with a placeholder Gateway. Requires the GAIE and Gateway
+# API CRDs and the llm-d-routerservice manager running against the
+# cluster.
+#
+#   kubectl apply -k config/demo
+#
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - demo.yaml
